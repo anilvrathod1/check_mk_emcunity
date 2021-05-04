@@ -6,7 +6,7 @@ def agent_emcunity_arguments(params, hostname, ipaddress):
     args = ''
 
     if params.get("lockbox", False) == False:
-        args += " -u " + quote_shell_string(params["username"])
+        args += " -u " + quote_shell_string(params["user"])
         args += " -p " + quote_shell_string(params["password"][1])
 
     args += " " + quote_shell_string(ipaddress)
